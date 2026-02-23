@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P3 · Car marketplace (Figma interface)</title>
+  <!-- Tailwind + Inter font for that clean UI feel -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; background: #F6F5F3; }
+  </style>
+</head>
+<body class="bg-[#F2F1EF] text-[#1E1E1E] antialiased">
+
+  <!-- main container – clean, minimal, centered -->
+  <div class="max-w-5xl mx-auto px-4 py-8 md:py-10">
+    <img src="CAR LOGO.png" alt="">
+
+    <!-- top navigation: Home About Browse Sellers Login Sign Up (exactly as P3.png) -->
+    <nav class="flex items-center justify-between text-sm font-medium text-[#333] mb-12 border-b border-[#E0DDDA] pb-4">
+      <div class="flex space-x-8">
+        <a href="#" class="hover:text-black transition">Home</a>
+        <a href="#" class="hover:text-black transition">About</a>
+        <a href="#" class="hover:text-black transition">Browse</a>
+        <a href="#" class="hover:text-black transition">Sellers</a>
+      </div>
+      <div class="flex space-x-6">
+        <a href="login.html" class="hover:text-black transition">Login</a>
+        <a href="signup.html" class="bg-[#1C1B1F] text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-[#2F2E35] transition shadow-sm">Sign Up</a>
+      </div>
+    </nav>
+
+    <!-- search bar row: Location / Car Type / Search (exactly as described) -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mb-12">
+      <!-- location field -->
+      <div class="md:col-span-1">
+        <div class="bg-white rounded-xl border border-[#E2DFDD] px-4 py-3 flex items-center text-[#888] text-sm">
+          <span class="text-[#9C9A9A] mr-2">📍</span>
+          <span class="text-[#3C3A3F]">Location</span>
+        </div>
+      </div>
+      <!-- car type field -->
+      <div class="md:col-span-1">
+        <div class="bg-white rounded-xl border border-[#E2DFDD] px-4 py-3 flex items-center text-[#888] text-sm">
+          <span class="text-[#9C9A9A] mr-2">🚘</span>
+          <span class="text-[#3C3A3F]">Car Type</span>
+        </div>
+      </div>
+      <div class="md:col-span-2 bg-[#1C7ED6]">
+        <button class="w-full bg-[#1C7ED6] hover:bg-[#2F2E35] text-white text-sm font-medium py-3.5 rounded-xl transition shadow-sm flex items-center justify-center">
+          <span class="mr-2">🔍</span> Search
+        </button>
+      </div>
+    </div>
+
+    <div class="mb-5 flex items-center">
+      <h2 class="text-base font-semibold text-[#1C1B1F] tracking-tight">Featured Verified Seller</h2>
+      <span class="ml-3 bg-blue-50 text-[#0B5F9E] text-xs px-3 py-1 rounded-full border border-blue-100 font-medium"></span>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      
+      <div class="bg-white rounded-2xl border border-[#EDEBE9] p-5 shadow-sm hover:shadow-md transition">
+        <div class="flex items-start justify-between">
+          <div>
+            <img src="hyundai-tucson-.jpg" alt="">
+            <h3 class="font-semibold text-lg text-[#1C1B1F]">Hyundai Tucson</h3>
+            <div class="flex items-center mt-1 text-sm text-[#6B6A70]">
+              <span class="mr-2">📍 Musanze</span>
+              <span class="flex items-center">⭐⭐⭐ 4.2</span>
+            </div>
+          </div>
+          <span class="bg-[#E9F1FB] text-[#0F3B6E] text-xs px-2 py-1 rounded-full font-medium">verified</span>
+        </div>
+        <button class="mt-4 w-full bg-[#1C7ED6]  hover:bg-[#E8E6E3] text-white text-sm font-medium py-2.5 rounded-xl transition border border-[#DDDAD7]"><a href="profile.html">
+          View Profile</a>
+        </button>
+      </div>
+      <div class="bg-white rounded-2xl border border-[#EDEBE9] p-5 shadow-sm hover:shadow-md transition">
+        <div class="flex items-start justify-between">
+          <div>
+            <img src="toyota.jpg" alt="">
+            <h3 class="font-semibold text-lg text-[#1C1B1F]">Toyota</h3>
+            <div class="flex items-center mt-1 text-sm text-[#6B6A70]">
+              <span class="mr-2">📍 Kigali</span>
+              <span class="flex items-center">⭐⭐⭐⭐ 4.7</span>
+            </div>
+          </div>
+          <span class="bg-[#E9F1FB] text-[#0F3B6E] text-xs px-2 py-1 rounded-full font-medium">verified</span>
+        </div>
+        <button class="mt-4 w-full bg-[#1C7ED6] hover:bg-[#E8E6E3] text-white text-sm font-medium py-2.5 rounded-xl transition border border-[#DDDAD7]">
+          View Profile
+        </button>
+      </div>
+      <div class="bg-white rounded-2xl border border-[#EDEBE9] p-5 shadow-sm hover:shadow-md transition">
+        <div class="flex items-start justify-between">
+          <div>
+            <img src="bmw.jpg" alt="">
+            <h3 class="font-semibold text-lg text-[#1C1B1F]">BMW 2004</h3>
+            <div class="flex items-center mt-1 text-sm text-[#6B6A70]">
+              <span class="mr-2">📍 Butare</span>
+              <span class="flex items-center">⭐⭐⭐ 4.2</span>
+            </div>
+          </div>
+          <span class="bg-[#E9F1FB] text-[#0F3B6E] text-xs px-2 py-1 rounded-full font-medium">verified</span>
+        </div>
+        <button class="mt-4 w-full bg-[#1C7ED6] hover:bg-[#E8E6E3] text-white text-sm font-medium py-2.5 rounded-xl transition border border-[#DDDAD7]">
+          View Profile
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
